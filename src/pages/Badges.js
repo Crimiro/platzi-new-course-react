@@ -1,5 +1,5 @@
 import React from 'react';
-import Navbar from '../components/Navbar';
+import { Link } from 'react-router-dom';
 import Logo from '../images/react.png';
 import Badge from '../components/Badge';
 import BadgesList from '../components/BadgesList';
@@ -38,8 +38,7 @@ class Badges extends React.Component {
   }
   render() {
     return (
-      <div>
-        <Navbar />
+      <React.Fragment>
         <div>
           <div style={{width: '100%'}}>
             <div>
@@ -51,9 +50,9 @@ class Badges extends React.Component {
         </div>
         <div style={{width: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
           <div style={{width: '40%', display: 'flex', flexDirection: 'column', alignItems: 'flex-end'}}>
-            <a href='/badges/new'>
+            <Link to='/badges/new'>
               New Bagde
-            </a>
+            </Link>
           </div>
           <div style={{width: '40%'}}>
             <div>
@@ -61,7 +60,7 @@ class Badges extends React.Component {
             </div>
           </div>
         </div>
-      </div>
+      </React.Fragment>
     );
   }
 }
