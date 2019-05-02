@@ -40,7 +40,7 @@ class Home extends React.Component {
           </div>
         </div>
         <div style={rightStyle}>
-          <img src={Logo} />
+          <img src={Logo} alt='Logo'/>
         </div>
       </div>
     );
