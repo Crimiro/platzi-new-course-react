@@ -20,7 +20,7 @@ class BadgesList extends React.Component {
         {this.props.badges.map((badge) => {
           return(
               <div key={badge.id} style={{paddingBottom: 20}}>
-                <Link className='text-reset text-decoration-none' to={`/badges/${badge.id}/edit`}>
+                <Link className='text-reset text-decoration-none' to={`/badges/${badge.id}`}>
                   <div style={{border: '1px solid gray', padding: 5}}>
                     <div style={{display: 'flex'}}>
                     <Gravatar
