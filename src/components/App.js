@@ -3,7 +3,7 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Home from '../pages/Home';
 import Badges from '../pages/Badges';
 import BadgeNew from '../pages/BadgeNew';
-import BadgeDetails from '../pages/BadgeDetails';
+import BadgeDetailsContainer from '../pages/BadgeDetailsContainer';
 import BadgeEdit from '../pages/BadgeEdit';
 import NotFound from '../pages/NotFound';
 import Layout from '../components/Layout';
@@ -31,7 +31,7 @@ function App() {
           <Route
             exact
             path='/badges/:badgeId'
-            component={BadgeDetails}
+            component={BadgeDetailsContainer}
           />
           <Route
             exact
